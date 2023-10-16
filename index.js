@@ -11,9 +11,7 @@ const session = require('express-session');
 const redisStore = require('connect-redis').default;
 const {createClient} = require('redis');
 const redisClient = createClient({
-    // url: 'rediss://red-ckmb2abj89us73b8ctpg:U1ca9tLzXlP0ruI8qJkV2vjKXla1omTd@singapore-redis.render.com:6379'
-    url: 'redis://red-ckmb2abj89us73b8ctpg:6379'
-    // url: process.env.REDIS_URL
+    url: process.env.REDIS_URL
 });
 redisClient.connect().catch(console.error);
 
