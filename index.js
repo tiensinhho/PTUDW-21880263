@@ -1,7 +1,7 @@
 'use strict';
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 5050;
+const port = process.env.PORT || 4000;
 const expressHandlebars = require('express-handlebars');
 const {createStarList} = require('./controllers/handlebarsHelper');
 const {createPagination} = require('express-handlebars-paginate');
