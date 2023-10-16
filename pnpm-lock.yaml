@@ -20,6 +20,9 @@ dependencies:
   express-validator:
     specifier: ^7.0.1
     version: 7.0.1
+  node-path:
+    specifier: ^0.0.3
+    version: 0.0.3
   pg:
     specifier: ^8.11.3
     version: 8.11.3
@@ -802,6 +805,10 @@ packages:
 
   /next-tick@1.1.0:
     resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
+    dev: false
+
+  /node-path@0.0.3:
+    resolution: {integrity: sha512-S+n5Gb8mQHr8AAzrLo/VD+6gq+45b8B/U0o0/Cnx+vBctvC9EvzapdV5Jem5rJT95mNrweZnxAuQErlTWSDjiA==}
     dev: false
 
   /nopt@6.0.0:
