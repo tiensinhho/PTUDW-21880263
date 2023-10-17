@@ -2,6 +2,7 @@ let controllers = {}
 const { where } = require('sequelize');
 const models = require('../models')
 const sequelize = require('sequelize'); //toan tu sequelize cho search
+const controller = require('./indexController');
 const Op = sequelize.Op;
 
 
@@ -151,5 +152,7 @@ function removeParam(key, sourceURL) {
     }
     return rtn;
 }
+
+
 
 module.exports = controllers
