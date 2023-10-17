@@ -51,7 +51,7 @@ router.post('/forgot-password',
     (req, res, next) => {
         let message = getErrorMessage(req);
         if (message){
-            return res.render('forgot-password', {message: message});
+            return res.render('forgot-password', {message});
         }
         next();
     },
@@ -73,7 +73,7 @@ body('confirmPassword').custom((confirmPassword, {req}) => {
 (req, res, next) => {
     let message = getErrorMessage(req);
     if (message){
-        return res.render('reset-password', {message: message});
+        return res.render('reset-password', {message});
     }
     next();
 },
